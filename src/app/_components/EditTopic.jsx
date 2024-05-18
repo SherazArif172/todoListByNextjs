@@ -1,6 +1,6 @@
 "use client";
 
-const editTopic = () => {
+const EditTopic = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
@@ -39,4 +39,4 @@ const editTopic = () => {
   );
 };
 
-export default editTopic;
+export default EditTopic;
