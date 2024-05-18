@@ -12,3 +12,10 @@ export async function PUT(req, { params }) {
     { status: 200 }
   );
 }
+
+export async function GET(req, { params }) {
+  const { id } = params;
+  await connectDb();
+  const topic = await Topic.find({ _id: id });
+  return NextResponse.json({ topic }, { status: 200 });
+}

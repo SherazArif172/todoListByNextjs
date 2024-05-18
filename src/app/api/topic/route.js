@@ -39,3 +39,5 @@ export async function DELETE(req) {
   await Topic.findByIdAndDelete(id);
   return NextResponse.json({ message: "deleted successfuly" }, { status: 200 });
 }
+
+
